@@ -1,0 +1,382 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #cccccc;
+  color: white;
+  font-size: 15px;
+  line-height: 2;
+}
+p,
+h1,
+h2.h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+img {
+  vertical-align: bottom;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #3583aa;
+  /* aタグ下線削除 */
+  text-decoration: none;
+}
+a:visited {
+  color: #788d98;
+}
+a:hover {
+  /* ホバー時のみ下線 */
+  text-decoration: underline;
+}
+header {
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
+}
+.logo {
+  float: left;
+  margin-top: 50px;
+}
+.global-nav {
+  float: right;
+  margin-top: 60px;
+}
+.global-nav li {
+  float: left;
+  margin: 0 20px;
+  font-size: 20px;
+  list-style: none;
+  font-family: "Bitter", serif;
+}
+.global-nav li a {
+  color: white;
+}
+.global-nav li a:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 3px;
+  text-decoration: none;
+  transition: all 0.2s;
+  /* 下線をふわっと表示させてみたい */
+}
+#wrap {
+  clear: both;
+  background-color: #0b071a;
+  margin-top: 100px;
+  padding: 35px 0;
+}
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+footer {
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  background-color: #17133b;
+}
+footer small {
+  font-size: 12px;
+}
+#top h1 {
+  font-size: 100px;
+  line-height: 1.2;
+  color: white;
+  font-family: "Bitter", serif;
+  margin-bottom: 50px;
+  border: none;
+}
+#top .content {
+  margin-top: 150px;
+}
+#top p {
+  font-size: 16px;
+  color: white;
+}
+.btn a {
+  background-color: #454a92fd;
+  color: white;
+  font-size: 20px;
+  font-family: "Bitter", serif;
+  width: 185px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 80px;
+  border-radius: 7px;
+  /* 背景色と同じ色で枠線 */
+  border: 3px solid #454a92fd;
+}
+.btn a:hover {
+  text-decoration: none;
+  transition: all 1s;
+  background-color: white;
+  color: #454a92fd;
+  /* 後でボタンがへこむようにしてみる */
+}
+#top footer {
+  width: 960px;
+  /* margin 上　右　下　左 */
+  margin: 150px auto 0 auto;
+  text-align: left;
+  /* footerのbackground-colorはabout.htmlのみ濃い色を適用 */
+  background-color: transparent;
+}
+#top {
+  /* ファイルパス:CSSフォルダ→上の階層→imagesフォルダ→指定のファイル */
+  /* background-sizeのプロパティ値触って画像サイズ調整 */
+  background-image: url(../img/bg_top_background01.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#about {
+  /* ファイルパス:CSSフォルダ→上の階層→imagesフォルダ→指定のファイル */
+  background-image: url(../img/bg_about.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+.main-center {
+  width: 940px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: "Bitter", serif;
+  font-size: 36px;
+  border-bottom: 1px solid #cccccc;
+}
+h2 {
+  font-family: "Bitter", serif;
+  font-size: 24px;
+}
+.icon:before {
+  content: "";
+  padding-right: 10px;
+  border-left: 7px solid #9cb4a4;
+}
+#about .profile-txt {
+  width: 540px;
+  float: left;
+}
+#about .profile-text span {
+  font-weight: bold;
+}
+/* 親要素floatプロパティの解除（浮かせてそろえるイメージ） */
+#about .profile-image {
+  float: right;
+  width: 340px;
+  height: 340px;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section {
+  margin-bottom: 35px;
+}
+#about .career th {
+  width: 240px;
+  background-color: #565988;
+  /* ショートハンド　上下　左右 */
+  padding: 12px 0;
+  border: 1px solid #cccccc;
+}
+#about .career td {
+  width: 660px;
+  padding: 12px 0 12px 40px;
+  border: 1px solid #cccccc;
+}
+table {
+  /* 罫線同士の隙間を無くす */
+  border-spacing: 0;
+  /* 罫線同士のかぶりを無くす */
+  border-collapse: collapse;
+}
+/* about.html用のCSSが与えたindex.htmlへの影響を解除する */
+#top #wrap {
+  background-color: transparent;
+  margin-top: 0;
+  padding: 0;
+}
+#works {
+  /* ファイルパス:CSSフォルダ→上の階層→imagesフォルダ→指定のファイル */
+  background-image: url(../img/bg_portfolio.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.main {
+  width: 700px;
+  margin: 0 10px;
+  float: left;
+}
+/* フォトショせずに写真とロゴを重ねる */
+#works .main section {
+  position: relative;
+}
+#works .main .graphic-logo,
+.music-logo {
+  position: absolute;
+  top: 10px;
+  bottom: 15px;
+}
+.sidebar {
+  /* widthの算出については別途勉強 */
+  width: 200px;
+  margin: 0 10px 0 30px;
+  float: right;
+  font-family: "Bitter", serif;
+}
+#works .main a img {
+  width: 700px;
+  height: 210px;
+}
+.graphic-logo:hover {
+  opacity: 0.5;
+  transition: all 0.8s;
+}
+.music-logo:hover {
+  opacity: 0.5;
+  transition: all 0.8s;
+}
+.sidebar h2 {
+  margin-bottom: 10px;
+}
+.sidebar ul {
+  font-size: 16px;
+  margin-left: 20px;
+  list-style: none;
+}
+.sidebar a {
+  color: white;
+}
+#photograph {
+  /* ファイルパス:CSSフォルダ→上の階層→imagesフォルダ→指定のファイル */
+  background-image: url(../img/bg_photograph.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+#photograph .photograph-list li {
+  float: left;
+  list-style: none;
+  margin: 0 20px 15px 0;
+}
+#photograph .photograph-list li:nth-child(3n) {
+  margin-right: 0;
+}
+#music {
+  /* ファイルパス:CSSフォルダ→上の階層→imagesフォルダ→指定のファイル */
+  background-image: url(../img/bg_video.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+#contact {
+  /* ファイルパス:CSSフォルダ→上の階層→imagesフォルダ→指定のファイル */
+  background-image: url(../img/bg_contact.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+#contact .access table {
+  float: left;
+}
+#contact .access th,
+#contact .access td {
+  text-align: left;
+  vertical-align: top;
+  line-height: 2.5;
+}
+#contact .access td {
+  padding-left: 30px;
+}
+#contact .access iframe {
+  width: 460px;
+  height: 200px;
+  float: right;
+}
+#contact .form {
+  background-color: #565988;
+  padding: 30px 50px;
+}
+/* float: left;でまわりこむ→clear: both; */
+#contact .form dl dt {
+  width: 165px;
+  padding: 10px 0;
+  float: left;
+  clear: both;
+}
+/* dt要素に対してdtと同様paddingを指定、レイアウト修正 */
+#contact .form dl dd {
+  padding: 10px 0;
+}
+#contact .form .name {
+  width: 240px;
+  height: 30px;
+}
+#contact .form .email {
+  width: 300px;
+  height: 30px;
+}
+#contact .form .tel {
+  width: 240px;
+  height: 30px;
+}
+#contact .form .type {
+  width: 180px;
+  height: 30px;
+}
+#contact .form .message {
+  width: 660px;
+  height: 150px;
+}
+#contact .form button {
+  background-color: #454a92fd;
+  color: white;
+  font-size: 20px;
+  width: 120px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 7px;
+  /* 背景色と同じ色で枠線 */
+  border: 3px solid #454a92fd;
+  margin-left: 165px;
+}
+#contact .form button:hover {
+  background-color: white;
+  color: #454a92fd;
+  cursor: pointer;
+  /* 後でボタンがへこむようにしてみる */
+}
+#contact .form .required:after {
+  content: "*";
+  color: #ff0000;
+}
+#contact .form .attention {
+  margin: 20px 0 0 165px;
+}
+#blog {
+  background-image: url(../img/bg_blog.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+#blog #wrap .main-center {
+  width: auto;
+  height: 820px;
+}

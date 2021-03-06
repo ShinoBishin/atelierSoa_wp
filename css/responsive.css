@@ -1,0 +1,83 @@
+/* メディアクエリ */
+@media all and (max-width: 1000px) {
+  * {
+    box-sizing: border-box;
+  }
+  header {
+    width: auto;
+    margin: 0 5%;
+  }
+  .content {
+    width: auto;
+  }
+  .sidebar {
+    width: auto;
+    float: none;
+    margin: 0;
+    padding: 30px 10px 10px;
+    background-color: #090925;
+  }
+}
+@media all and (max-width: 670px) {
+  /* 画面サイズが670px以下で適用 */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 3.5vw;
+  }
+  h1 {
+    font-size: 7.2vw;
+  }
+  h2 {
+    font-size: 6vw;
+  }
+  header {
+    width: auto;
+    margin: 0 5%;
+  }
+  .logo {
+    float: none;
+    margin-top: 60px;
+    text-align: center;
+  }
+  .global-nav {
+    float: none;
+    margin-top: 40px;
+    text-align: center;
+  }
+  /* この時点ではli要素のせいでセンタリングできない */
+  .global-nav li {
+    /* インラインにして横並びにする */
+    display: inline;
+    float: none;
+    margin: 0 8px;
+  }
+  #wrap {
+    margin-top: 40px;
+  }
+  .content {
+    width: 100%;
+  }
+  .main {
+    float: none;
+    width: auto;
+    margin: 0 5%;
+  }
+  h2 img {
+    max-width: 100%;
+  }
+  .sidebar {
+    width: auto;
+    float: none;
+    margin: 0;
+    padding: 30px 10px 10px;
+    background-color: #090925;
+  }
+  .main-center {
+    width: 100%;
+  }
+  .profile-txt {
+    max-width: 100%;
+  }
+}
