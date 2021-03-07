@@ -29,8 +29,17 @@
     padding:5px;
   }
   #top h1{
-    font-size: 50px;
+    font-size: 40px;
+    text-align: center;
   }
+  #top p{
+    text-align: center;
+  }
+  #top .btn a{
+    text-align: center;
+    width: inherit;
+  }
+
   #top footer {
     max-width: fit-content;
     /* margin 上　右　下　左 */
@@ -98,5 +107,23 @@
   }
   .profile-txt {
     max-width: 100%;
+  }
+  #contact .form{
+    padding:20px 10px;
+  }
+  #contact .form .email{
+    width: 250px;
+    height: 30px;
+  }
+  #contact .form .message{
+    width: 250px;
+    height: 200px;
+  }
+  #contact .form button{
+    width: 320px;
+    margin-left: 0;
+  }
+  #contact .form .attention{
+    margin: 20px 0 0 0;
   }
 }
