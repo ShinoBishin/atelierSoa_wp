@@ -9,6 +9,7 @@
   }
   .content {
     width: auto;
+    padding: 5px; 
   }
   .sidebar {
     width: auto;
@@ -20,6 +21,24 @@
 }
 @media all and (max-width: 670px) {
   /* 画面サイズが670px以下で適用 */
+  #top {
+    /* ファイルパス:CSSフォルダ→上の階層→imagesフォルダ→指定のファイル */
+    /* background-sizeのプロパティ値触って画像サイズ調整 */
+    background-image: url(../img/bg_top_background01_sp.jpg);
+    background-attachment: inherit;
+    padding:5px;
+  }
+  #top h1{
+    font-size: 50px;
+  }
+  #top footer {
+    max-width: fit-content;
+    /* margin 上　右　下　左 */
+    margin: 150px auto 0 auto;
+    text-align: left;
+    /* footerのbackground-colorはabout.htmlのみ濃い色を適用 */
+    background-color: transparent;
+  }
   * {
     box-sizing: border-box;
   }
