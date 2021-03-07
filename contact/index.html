@@ -1,130 +1,119 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | atelier S.O.A.</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/responsive.css" />
-  </head>
-  <body id="contact">
-    <!-- ヘッダー -->
-    <header>
-      <div class="logo">
-        <a href="../top/index.html">
-          <img src="../img/logo_01.png" alt="atelierSoa" />
-        </a>
-      </div>
-      <nav>
-        <ul class="global-nav">
-          <li><a href="../about/index.html"> About</a></li>
-          <li><a href="../works/index.html">Works</a></li>
-          <li><a href="../blog/index.html">Blog</a></li>
-          <li><a href="../contact/index.html"> Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- メインコンテンツ -->
-    <div id="wrap">
-      <div class="content">
-        <div class="main-center">
-          <h1>Contact</h1>
-          <p>
-            atelier S.O.A.
-            へのアクセス方法、お問い合わせ、お仕事のご依頼フォームです。お気軽にお問い合わせ下さい。
-          </p>
-          <section class="access clearfix">
-            <h2 class="icon">Access</h2>
-            <table>
-              <tr>
-                <th>所在地住所</th>
-                <td>
-                  〒123-4567 <br />
-                  兵庫県西宮市山口町名来〇-△-✕　102
-                </td>
-              </tr>
-              <tr>
-                <th>電話番号</th>
-                <td>080-〇〇〇〇-△△△△</td>
-              </tr>
-              <tr>
-                <th>交通機関でのアクセス</th>
-                <td>JR福知山線　道場駅より徒歩50分</td>
-              </tr>
-              <tr>
-                <th>お車でのアクセス</th>
-                <td>中国自動車道西宮北I.Cより2分</td>
-              </tr>
-            </table>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13098.32990937395!2d135.2368761813198!3d34.84158879750904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600061a2d831946b%3A0x231d27b48f85f4f4!2z44CSNjUxLTE0MTEg5YW15bqr55yM6KW_5a6u5biC5bGx5Y-j55S65ZCN5p2l!5e0!3m2!1sja!2sjp!4v1594167636845!5m2!1sja!2sjp"
-              width="600"
-              height="450"
-              frameborder="0"
-              style="border: 0;"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-            ></iframe>
-          </section>
-          <section id="contact-form">
-            <h2 class="icon">Contact form</h2>
-            <div class="form">
-              <form>
-                <dl>
-                  <!-- 必須入力のclass -->
-                  <dt><span class="required"> お名前</span></dt>
-                  <dd>
-                    <input type="text" name="name" class="name" required />
-                  </dd>
-                  <dt><span class="required"> メールアドレス</span></dt>
-                  <dd>
-                    <input type="email" name="email" class="email" required />
-                  </dd>
-                  <dt>お電話番号</dt>
-                  <dd><input type="tel" name="tel" class="tel" /></dd>
-                  <dt>お問い合わせ種別</dt>
-                  <dd>
-                    <select name="type" class="type">
-                      <option value="お仕事のご依頼">お仕事のご依頼</option>
-                      <option value="講演、各種メディア出演のご依頼"
-                        >講演、各種メディア出演のご依頼</option
-                      >
-                      <option value="その他のお問い合わせ"
-                        >その他のお問い合わせ</option
-                      >
-                    </select>
-                  </dd>
-                  <dt>ご希望の連絡方法</dt>
-                  <dd>
-                    <input type="radio" name="contact" value="Eメール" />Eメール
-                    <input type="radio" name="contact" value="お電話" />お電話
-                  </dd>
-                  <dt>メッセージ</dt>
-                  <dd><textarea name="message" class="message"></textarea></dd>
-                </dl>
-                <button type="submit" class="btn">送信</button>
-              </form>
-              <div class="attention">
-                <p>
-                  ※「<span class="required"></span
-                  >」のついている項目は必須項目です。<br />
-                  ※メッセージ送信後、２４時間以内に担当者よりご連絡致します。
-                </p>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | atelier S.O.A.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+
+<body id="contact">
+  <!-- ヘッダー -->
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../img/logo_01.png" alt="atelierSoa" />
+      </a>
+    </div>
+    <nav>
+      <ul class="global-nav">
+        <li><a href="../about/index.html"> About</a></li>
+        <li><a href="../works/index.html">Works</a></li>
+        <li><a href="../blog/index.html">Blog</a></li>
+        <li><a href="../contact/index.html"> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- メインコンテンツ -->
+  <div id="wrap">
+    <div class="content">
+      <div class="main-center">
+        <h1>Contact</h1>
+        <p>
+          atelier S.O.A.
+          へのアクセス方法、お問い合わせ、お仕事のご依頼フォームです。お気軽にお問い合わせ下さい。
+        </p>
+        <section class="access clearfix">
+          <h2 class="icon">Access</h2>
+          <table>
+            <tr>
+              <th>所在地住所</th>
+              <td>
+                〒123-4567 <br />
+                兵庫県西宮市山口町名来〇-△-✕　102
+              </td>
+            </tr>
+            <tr>
+              <th>電話番号</th>
+              <td>080-〇〇〇〇-△△△△</td>
+            </tr>
+            <tr>
+              <th>交通機関でのアクセス</th>
+              <td>JR福知山線　道場駅より徒歩50分</td>
+            </tr>
+            <tr>
+              <th>お車でのアクセス</th>
+              <td>中国自動車道西宮北I.Cより2分</td>
+            </tr>
+          </table>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13098.32990937395!2d135.2368761813198!3d34.84158879750904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600061a2d831946b%3A0x231d27b48f85f4f4!2z44CSNjUxLTE0MTEg5YW15bqr55yM6KW_5a6u5biC5bGx5Y-j55S65ZCN5p2l!5e0!3m2!1sja!2sjp!4v1594167636845!5m2!1sja!2sjp"
+            width="600" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </section>
+        <section id="contact-form">
+          <h2 class="icon">Contact form</h2>
+          <div class="form">
+            <form>
+              <dl>
+                <!-- 必須入力のclass -->
+                <dt><span class="required"> お名前</span></dt>
+                <dd>
+                  <input type="text" name="name" class="name" required />
+                </dd>
+                <dt><span class="required"> メールアドレス</span></dt>
+                <dd>
+                  <input type="email" name="email" class="email" required />
+                </dd>
+                <dt>お電話番号</dt>
+                <dd><input type="tel" name="tel" class="tel" /></dd>
+                <dt>お問い合わせ種別</dt>
+                <dd>
+                  <select name="type" class="type">
+                    <option value="お仕事のご依頼">お仕事のご依頼</option>
+                    <option value="講演、各種メディア出演のご依頼">講演、各種メディア出演のご依頼</option>
+                    <option value="その他のお問い合わせ">その他のお問い合わせ</option>
+                  </select>
+                </dd>
+                <dt>ご希望の連絡方法</dt>
+                <dd>
+                  <input type="radio" name="contact" value="Eメール" />Eメール
+                  <input type="radio" name="contact" value="お電話" />お電話
+                </dd>
+                <dt>メッセージ</dt>
+                <dd><textarea name="message" class="message"></textarea></dd>
+              </dl>
+              <button type="submit" class="btn">送信</button>
+            </form>
+            <div class="attention">
+              <p>
+                ※「<span class="required"></span>」のついている項目は必須項目です。<br />
+                ※メッセージ送信後、２４時間以内に担当者よりご連絡致します。
+              </p>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </div>
-    <!-- フッター -->
-    <footer>
-      <small>(C) 2020 atelier S.O.A. </small>
-    </footer>
-  </body>
+  </div>
+  <!-- フッター -->
+  <footer>
+    <small>(C) 2020 atelier S.O.A. </small>
+  </footer>
+</body>
+
 </html>
